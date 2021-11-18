@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   resources :clues
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get '/all_clues', to: "clues#get_clues"
 end
